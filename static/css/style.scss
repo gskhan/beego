@@ -1,0 +1,153 @@
+// Variables
+$theme-color__main: #fec830;
+$theme-color__bg: #00334b;
+$theme-color__bg--btn: #3595f2;
+$theme-color__text: #4a4a4a;
+
+$theme-font-family: 'Roboto',
+sans-serif;
+
+$color-white: #fff;
+$color-blue: #49bcff;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Global Styles
+body {
+  font-family: $theme-font-family;
+  color: $theme-color__text;
+}
+
+// Menu
+.navbar-dark {
+  background-color: $theme-color__bg;
+
+  .navbar-brand {
+    color: $theme-color__main;
+
+    &:hover {
+      color: $theme-color__main;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+  }
+}
+
+// Buttons
+.btn {
+  border-radius: 5px;
+
+  &-primary {
+    background-color: $theme-color__bg--btn;
+    border-color: $theme-color__bg--btn;
+  }
+}
+
+// Carousel Styles
+.carousel {
+  margin-bottom: 4rem;
+
+  &-caption {
+    bottom: 3rem;
+    z-index: 10;
+
+    p {
+      @media (min-width: 40em) {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  &-item {
+    height: 32rem;
+  }
+
+  &-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+}
+
+// Marketing Styles
+.marketing {
+  .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    p {
+      margin-right: .75rem;
+      margin-left: .75rem;
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+}
+
+// Featurette Styles
+.featurette {
+  &-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+  }
+
+  &-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+}
+
+// Background Styles
+.bg-light {
+  padding-top: 56px;
+
+  +hr {
+    margin: 0;
+  }
+}
+
+// Badges Styles
+.badge-yellow {
+  color: $theme-color__text;
+  background-color: $theme-color__main;
+}
+
+// Graphs Styles
+.graph {
+
+  &-wrapper,
+  &-container {
+    height: 300px;
+  }
+
+  &-container {
+    .bar {
+      &.normal {
+        background-color: $color-blue;
+      }
+
+      &.optimized {
+        background-color: $theme-color__main;
+      }
+      span {
+        display: block;
+        background-color: $color-white;
+      }
+    }
+  }
+}
+
+// Footer Styles
+.footer {
+  background-color: $theme-color__main;
+}

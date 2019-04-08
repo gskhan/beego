@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  font-family: "Roboto", sans-serif;
+  color: #4a4a4a;
+}
+
+.navbar-dark {
+  background-color: #00334b;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fec830;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #fec830;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #3595f2;
+  border-color: #3595f2;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.bg-light {
+  padding-top: 56px;
+}
+
+.bg-light + hr {
+  margin: 0;
+}
+
+.badge-yellow {
+  color: #4a4a4a;
+  background-color: #fec830;
+}
+
+.graph-wrapper, .graph-container {
+  height: 300px;
+}
+
+.graph-container .bar.normal {
+  background-color: #49bcff;
+}
+
+.graph-container .bar.optimized {
+  background-color: #fec830;
+}
+
+.graph-container .bar span {
+  display: block;
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #fec830;
+}
+/*# sourceMappingURL=style.css.map */
